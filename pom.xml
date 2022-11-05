@@ -8,11 +8,11 @@
         <version>2.4.5</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.ratepay</groupId>
-    <artifactId>policy-manage-service</artifactId>
+    <groupId>com.ebi</groupId>
+    <artifactId>ebi-crud-manager-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>policy-manage-service</name>
-    <description>policy-manage-service</description>
+    <name>ebi-crud-manager-service</name>
+    <description>ebi-crud-manager-service</description>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
