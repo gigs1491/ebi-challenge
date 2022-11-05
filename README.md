@@ -62,13 +62,13 @@ The service will provide the following endpoint to receive individual track even
 
 1. Clone the repository from https://github.com/gigs1491/ebi-challenge
 2. Use Docker pull command `docker pull gagan1491/docker-ebi-springboot:latest`
-3. Check the logs on which port its start maybe either `1010` or `8080`
+3. Check the logs on which port its start maybe either `1010` (if docker) or `8080`(if locally)
 4. Look for H2 DB JDBC Url.
    ![](misc/images/start-up.png)
 5. Open `/h2-console/` on browser and copy-paste the JDBC Url.
    ![](misc/images/h2-console.png)
 6. Hit the `HTTP GET /v1/person/listAll` first to see what all data already present in db.
-7. You will see the table `Person` & `Hobby` table already created with 2 records already inserted.
+7. You will see the table `Person` & `Hobby` table created with 2 records already inserted.
 8. Follow steps from above to add, modify, delete and get person details.
 
 ## Considerations
