@@ -29,18 +29,18 @@ public class PersonController {
         return personService.findAll();
     }
 
-    @PostMapping("/create")
+    @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public ResponseEntity<DataDTO> createPerson(@Valid @RequestBody DataDTO dataDTO) throws ConstraintsViolationException {
         return personService.create(dataDTO);
     }
 
-    @PutMapping("/edit/{personId}")
+    @PutMapping("/{personId}")
     public DataDTO editPerson(@PathVariable Long personId, @RequestBody DataDTO dataDTO) throws EntityNotFoundException {
         return personService.update(personId, dataDTO);
     }
 
-    @DeleteMapping("/remove/{personId}")
+    @DeleteMapping("/{personId}")
     public void deletePerson(@PathVariable Long personId) throws EntityNotFoundException {
         personService.delete(personId);
     }

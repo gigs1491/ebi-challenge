@@ -10,7 +10,7 @@ The service will provide the following endpoint to receive individual track even
 1. Creation of persons
 
 *Input*
-`HTTP POST /v1/person/create`
+`HTTP POST /v1/person`
 ```json
 {
     "person": [
@@ -28,10 +28,10 @@ The service will provide the following endpoint to receive individual track even
     ]
 }
 ```
-2. Modifying policy by adding and/or removing an person to an already existing person.
+2. Modifying person by adding and/or removing a person to an already existing person.
 
 *Input*
-`HTTP PUT /v1/person/edit/{personId}`
+`HTTP PUT /v1/person/{personId}`
 ```json
 {
     "person": [
@@ -50,9 +50,9 @@ The service will provide the following endpoint to receive individual track even
 3. Removing the person
 
 *Input*
-`HTTP DELETE /v1/person/remove/{policyId}`
+`HTTP DELETE /v1/person/{personId}`
 
-4. List All person ind db
+4. List All person in db
 
 *Input*
 `HTTP GET /v1/person/listAll`
@@ -74,6 +74,6 @@ The service will provide the following endpoint to receive individual track even
 ## Considerations
 - H2 in memory database is used to store data.
 - Validation has been added and will throw `EntityNotFoundException` in case of update or delete if `personId` does not exist in DB it will throw 400 BAD_REQUEST.
-- Application has already been dokerize!!
+- Application has already been dockerize!!
 
 Have fun!!
