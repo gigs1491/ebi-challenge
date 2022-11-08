@@ -1,7 +1,6 @@
 package com.ebi.service;
 
 import com.ebi.datatransferobject.DataDTO;
-import com.ebi.datatransferobject.PersonDTO;
 import com.ebi.exception.EntityNotFoundException;
 import org.springframework.http.ResponseEntity;
 

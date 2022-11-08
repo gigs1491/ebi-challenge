@@ -1,7 +1,5 @@
 package com.ebi.domainobject;
 
-import com.ebi.domainobject.Person;
-import lombok.Builder;
 import lombok.Data;
 
 import javax.persistence.*;
