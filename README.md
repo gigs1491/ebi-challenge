@@ -47,7 +47,7 @@ The service will provide the following endpoint to receive individual track even
     ]
 }
 ```
-3. Removing the person
+3. Deleting the person
 
 *Input*
 `HTTP DELETE /v1/person/{personId}`
