@@ -16,13 +16,9 @@ public class Hobby {
     @Column(name = "hobby_name")
     private String hobbyName;
 
-    @ManyToOne
-    @JoinColumn(name = "person_id")
-    private Person person;
 
-    public Hobby(String hobbyName, Person person) {
+    public Hobby(String hobbyName) {
         this.hobbyName = hobbyName;
-        this.person = person;
     }
 
     public Hobby() {

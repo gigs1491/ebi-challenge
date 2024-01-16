@@ -13,7 +13,7 @@ import java.util.List;
 public class Person {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(nullable = false)
@@ -28,7 +28,8 @@ public class Person {
     @Column(nullable = false)
     private String favourite_colour;
 
-    @OneToMany(mappedBy = "person", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JoinColumn(name = "person_id")
     private List<Hobby> hobby = new ArrayList<>();
 
     public Person(String firstName, String lastName, int age, String favourite_colour, List<Hobby> hobby) {

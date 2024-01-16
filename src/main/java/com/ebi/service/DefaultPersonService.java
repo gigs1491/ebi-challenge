@@ -106,7 +106,6 @@ public class DefaultPersonService implements PersonService {
         hobbyList.forEach(hb -> {
             Hobby hobby = new Hobby();
             hobby.setHobbyName(hb);
-            hobby.setPerson(person);
             hobbies.add(hobby);
         });
         return hobbies;
