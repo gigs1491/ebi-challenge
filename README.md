@@ -73,6 +73,7 @@ The service will provide the following endpoint to receive individual track even
 
 ## Considerations
 - H2 in memory database is used to store data.
+- The code uses hibernate One-to-Many mapping with person and hobby 
 - Validation has been added and will throw `EntityNotFoundException` in case of update or delete if `personId` does not exist in DB it will throw 400 BAD_REQUEST.
 - Application has already been dockerize!!
 
